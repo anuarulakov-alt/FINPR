@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Why does foreign capital outside Kazakhstan's resource value chain stay narrow and resource-adjacent, and would an AI investor-targeting tool be worth its costs?">
+<title>An AI Answer for Kazakhstan: FDI and diversification</title>
+<style>
+:root{
+  --bg:#f7f4ee; --paper:#fffdf8; --ink:#1d2327; --muted:#5a6268; --rule:#d9d3c5;
+  --accent:#0f5c63; --accent2:#a4442c; --pos:#0f5c63; --neg:#a4442c; --warn:#8a6a12;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--serif)}
+a{color:var(--accent)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:6px 10px;z-index:99}
+nav.arc{position:sticky;top:0;z-index:20;background:rgba(247,244,238,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);font:13px var(--sans)}
+nav.arc .in{max-width:1080px;margin:0 auto;padding:0 16px;display:flex;gap:4px;align-items:center;overflow-x:auto;white-space:nowrap}
+nav.arc a{padding:12px 10px;text-decoration:none;color:var(--muted);border-bottom:3px solid transparent}
+nav.arc a.on{color:var(--ink);border-color:var(--accent);font-weight:600}
+nav.arc .sp{flex:1}
+nav.arc button{font:inherit;border:1px solid var(--rule);background:var(--paper);padding:5px 10px;border-radius:4px;cursor:pointer;color:var(--ink)}
+#bar{height:3px;background:var(--accent);width:0;transition:width .15s}
+main{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:56px 0 24px;border-bottom:1px solid var(--rule)}
+.hero{padding:72px 0 48px}
+.kicker{font:12px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.08;margin:10px 0 14px;letter-spacing:-.01em}
+h2{font-size:clamp(26px,4vw,36px);margin:0 0 6px;line-height:1.15}
+h2 .n{font:600 14px var(--sans);color:var(--accent);display:block;letter-spacing:.1em;margin-bottom:4px}
+h3{font:600 15px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:30px 0 8px}
+.lede{font-size:clamp(19px,2.4vw,24px);max-width:760px;line-height:1.45}
+.verdict-tease{margin-top:22px;padding:14px 18px;border-left:4px solid var(--accent2);background:var(--paper);max-width:760px;font-size:18px}
+.verdict-tease b{font:600 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent2);display:block}
+.legend{display:flex;flex-wrap:wrap;gap:18px;font:14px var(--sans);margin:22px 0 0;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid var(--accent)}
+.dot.solid{background:var(--accent)}
+.credit{font:14px var(--sans);color:var(--muted);margin-top:18px}
+.prose{max-width:760px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}
+.stat{background:var(--paper);border:1px solid var(--rule);padding:16px 16px 14px;border-radius:4px}
+.stat .v{font:700 34px var(--sans);letter-spacing:-.02em;color:var(--accent)}
+.stat .v.neg{color:var(--neg)}
+.stat .l{font:14px/1.35 var(--sans);margin-top:4px}
+.stat .s{font:12px var(--sans);color:var(--muted);margin-top:8px;display:flex;align-items:center;gap:6px}
+.q{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:16px 20px;margin:18px 0;max-width:820px;font-size:19px}
+ul.h{list-style:none;padding:0;margin:0;max-width:820px}
+ul.h li{padding:9px 0;border-top:1px solid var(--rule)}
+ul.h li b{font-family:var(--sans);color:var(--accent);display:inline-block;min-width:34px}
+.fig{background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:14px 16px 12px;margin:18px 0}
+.fig h4{font:600 16px var(--sans);margin:0 0 2px}
+.fig .note{font:14px/1.45 var(--sans);color:var(--muted);margin:0 0 8px}
+.fig svg{width:100%;height:auto;display:block}
+.fig .foot{font:12px/1.45 var(--sans);color:var(--muted);border-top:1px solid var(--rule);margin-top:8px;padding-top:6px}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:860px){.panels{grid-template-columns:1fr}}
+svg text{font-family:var(--sans)}
+table{border-collapse:collapse;width:100%;font:14px/1.45 var(--sans)}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-top:1px solid var(--rule)}
+th{font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.tblwrap{overflow-x:auto;background:var(--paper);border:1px solid var(--rule);border-radius:4px}
+.badge{display:inline-block;font:600 11px var(--sans);padding:2px 7px;border-radius:10px;border:1px solid currentColor;white-space:nowrap}
+.b-hollow{color:var(--warn)}.b-solid{color:var(--accent)}.b-no{color:var(--neg)}.b-ok{color:var(--accent)}.b-un{color:var(--warn)}
+dl.sol{display:grid;grid-template-columns:170px 1fr;gap:0;max-width:900px;margin:12px 0;font:15px/1.5 var(--sans)}
+dl.sol dt{font-weight:600;padding:10px 12px 10px 0;border-top:1px solid var(--rule)}
+dl.sol dd{margin:0;padding:10px 0;border-top:1px solid var(--rule)}
+@media(max-width:640px){dl.sol{grid-template-columns:1fr}dl.sol dt{border-bottom:0;padding-bottom:0}dl.sol dd{border-top:0;padding-top:0}}
+.case{background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:16px 18px;margin:14px 0}
+.case h4{margin:0 0 6px;font:600 17px var(--sans)}
+.case p{margin:6px 0;font:15px/1.5 var(--sans)}
+.case p b{color:var(--muted);font-weight:600}
+.bill{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.bill .case ul{margin:6px 0 0;padding-left:18px;font:14px/1.5 var(--sans)}
+.nodata{color:var(--neg)}
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.sides{grid-template-columns:1fr}}
+.side{background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:6px 18px 12px}
+ol.src{padding-left:22px;font:14px/1.5 var(--sans)}
+ol.src li{padding:6px 0;border-top:1px solid var(--rule)}
+ol.src li code{font:12px monospace;color:var(--muted)}
+footer{max-width:1080px;margin:0 auto;padding:30px 16px 60px;font:13px var(--sans);color:var(--muted)}
+#tip{position:fixed;z-index:50;background:#1d2327;color:#fff;font:12px/1.4 var(--sans);padding:8px 10px;border-radius:4px;max-width:280px;pointer-events:none;display:none}
+.hud{position:fixed;right:14px;bottom:12px;background:#1d2327;color:#fff;font:13px var(--sans);padding:6px 12px;border-radius:4px;display:none;z-index:30}
+body.present{font-size:24px}
+body.present .deep,body.present .foot{display:none!important}
+body.present section{min-height:100vh;padding:80px 0 40px;display:flex;flex-direction:column;justify-content:center}
+body.present .hud{display:block}
+body.present .fig .note{font-size:17px}
+body.present .panels{grid-template-columns:1fr 1fr}
+body.present table{font-size:17px}
+@media print{nav.arc,.hud{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#problem">Skip to content</a>
+<nav class="arc" aria-label="Sections">
+  <div class="in" id="navin">
+    <a href="#problem" data-s="problem">1 Problem</a>
+    <a href="#data" data-s="data">2 Data</a>
+    <a href="#research" data-s="research">3 Research</a>
+    <a href="#solution" data-s="solution">4 Solution</a>
+    <a href="#bill" data-s="bill">5 Bill</a>
+    <a href="#verdict" data-s="verdict">6 Verdict</a>
+    <a href="#transparency" data-s="transparency">AI use</a>
+    <a href="#sources" data-s="sources">Sources</a>
+    <span class="sp"></span>
+    <button id="pbtn" type="button" aria-label="Presentation mode (P)">Present</button>
+  </div>
+  <div id="bar"></div>
+</nav>
+
+<main>
+<section class="hero slide" id="top">
+  <div class="kicker">PLS519 · AI from a Social Science Perspective · Nazarbayev University</div>
+  <h1>An AI Answer for Kazakhstan</h1>
+  <p class="lede">Why does foreign capital outside the resource value chain stay narrow and resource-adjacent in Kazakhstan, and would an AI investor-targeting tool be worth its costs?</p>
+  <div class="verdict-tease"><b>Verdict in one line</b>Only under conditions. The tool could help only if investors really stall at finding partners and sites, and the public evidence for that is missing.</div>
+  <div class="legend" aria-label="How to read every number">
+    <span><i class="dot solid"></i> Solid: checked in the primary document</span>
+    <span><i class="dot"></i> Hollow: seen only through a summary or extraction</span>
+  </div>
+  <p class="deep" style="font:14px var(--sans);color:var(--muted);margin:8px 0 0">Every number on this site is currently hollow. Hover or tap a number or chart marker to see its source, basis and vintage.</p>
+  <div class="credit">Desk · PLS519 · Fall 2026 · Press <b>P</b> for presentation mode</div>
+</section>
+
+<section class="slide" id="problem">
+  <h2><span class="n">1</span>The Problem</h2>
+  <p class="lede">Kazakhstan holds about $164bn of foreign direct investment (FDI), but outside oil, gas and mining the money that arrives is narrow and sits close to the resource base.</p>
+  <div class="cards" id="statcards"></div>
+
+  <h3>Scope</h3>
+  <div class="prose"><p>"Outside the resource value chain" can be read two ways. <b>Narrow:</b> investment in activities that do not process the country's own hydrocarbons or ores, so metallurgy, refining and petrochemicals do not count. <b>Broad</b> (the official reading): moving up the value chain into midstream and downstream processing counts as diversification. This site reports both, and the gap between the two readings is part of the finding.</p></div>
+
+  <h3>Who is affected</h3>
+  <div class="prose"><p>The state's diversification agenda, which the OECD finds only partly fulfilled, and the firms and workers in non-resource sectors that would gain from foreign capital, technology and supplier links. This site does not claim to measure effects on particular regions or groups, because no data collected here would support it.</p></div>
+
+  <h3>The social-science question</h3>
+  <div class="q">Why does foreign capital outside the resource value chain stay small and resource-adjacent in Kazakhstan? Is the binding constraint information and matching frictions (H1), crowding-out by the resource sector (H2), or weak credible commitment and state discretion (H3)? The AI question comes second: under what conditions would an AI investor-targeting tool address it?</div>
+  <ul class="h">
+    <li><b>H0</b> Market size, distance and factor costs explain the pattern. No data was collected on this, so the site cannot rule it out.</li>
+    <li><b>H1</b> Information and matching frictions. The only hypothesis an AI tool could touch, and no public evidence for it was found.</li>
+    <li><b>H2</b> Crowding-out by the resource sector (Dutch disease, competition for rents).</li>
+    <li><b>H3</b> Weak credible commitment and state discretion.</li>
+  </ul>
+  <p class="deep" style="font:14px var(--sans);color:var(--muted);margin-top:16px">Sources for this section: NBK_BOP_9M25, HALYK_APR26, IMF_CR26_17, OECD_BC23 (see Sources).</p>
+</section>
+
+<section class="slide" id="data">
+  <h2><span class="n">2</span>Background &amp; Data</h2>
+  <p class="lede">Gross inflows agree across sources; every net figure depends on its definition. In 2025 the resource sector drains while other sectors gain.</p>
+
+  <div class="panels">
+    <div class="fig"><h4>A. Gross inflow is robust, net is not</h4>
+      <p class="note">Gross and net move apart, and five readings of 2024 net exist. 2025 is shown separately because it is 9 months on a different basis.</p>
+      <svg id="pA" viewBox="0 0 640 330" role="img" aria-label="Line chart of gross and net FDI, 2015 to 2024, with 2025 nine-month markers"></svg>
+      <div class="foot" id="fA"></div></div>
+    <div class="fig"><h4>B. 2025 net flows by sector</h4>
+      <p class="note">The negative total sits in mining. Manufacturing and trade, finance and communications are positive.</p>
+      <svg id="pB" viewBox="0 0 640 330" role="img" aria-label="Bar chart of 2025 net FDI by sector"></svg>
+      <div class="foot" id="fB"></div></div>
+    <div class="fig"><h4>C. The stock is mostly debt</h4>
+      <p class="note">Intercompany debt is 54% of the stock, and 67.3% of that debt sits in oil and gas branches.</p>
+      <svg id="pC" viewBox="0 0 640 330" role="img" aria-label="Stacked bar of FDI stock by instrument"></svg>
+      <div class="foot" id="fC"></div></div>
+    <div class="fig"><h4>D. Inside manufacturing: metals and chemicals dominate</h4>
+      <p class="note">This is the stock of all external liabilities by activity, not direct investment only. It brackets the narrow definition and does not measure it.</p>
+      <svg id="pD" viewBox="0 0 640 330" role="img" aria-label="Bar chart of manufacturing external liabilities by subsector"></svg>
+      <div class="foot" id="fD"></div></div>
+  </div>
+  <p class="deep" style="font:14px/1.5 var(--sans);color:var(--muted)">Panel B: the listed sectors sum to -1.7bn against a total of -0.9bn; the +0.8bn residual is presumably other sectors (unconfirmed). The finance inflow may be purchases of existing banks, not new capital. Panel C: stock was 169.5bn on 1 Jan 2025, a fall of 5.1bn. Panel D: excluding basic metals and refining leaves 12.4bn; also excluding all chemicals leaves 6.8bn. In 2025 flows, metallurgy was 47% of manufacturing FDI and machinery, electronics and electrical equipment together about 5%.</p>
+
+  <h3>Data silences: what the data cannot show, and who falls through</h3>
+  <div class="tblwrap"><table id="silences"><thead><tr><th>#</th><th>Silence</th><th>Why it matters</th><th>Who or what falls through</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="slide" id="research">
+  <h2><span class="n">3</span>Current State of Research</h2>
+  <p class="lede">Research agrees that resource wealth shapes who invests and on what terms, but disagrees on whether promotion, linkages or institutions are the lever.</p>
+  <div class="tblwrap"><table id="approaches"><thead><tr><th>Approach</th><th>What it claims</th><th>Sources</th><th>How far I read</th></tr></thead><tbody></tbody></table></div>
+  <div class="q" style="margin-top:22px"><b style="font:600 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block">The gap</b>In a non-systematic search, I found (i) no Kazakhstan-specific evidence on whether investors outside resources stall at partner, site or supplier matching; (ii) no causal evaluation of AI-based investor targeting; and (iii) investment-promotion estimates only from small open economies, chiefly Costa Rica, which cannot separate information frictions from rent and commitment constraints in a state-heavy resource economy.</div>
+  <p class="deep" style="font:14px var(--sans);color:var(--muted)">Limit: the search was not systematic (no Scopus or Google Scholar pass, no Russian-language literature), so the gap is a working statement, not a finding.</p>
+</section>
+
+<section class="slide" id="solution">
+  <h2><span class="n">4</span>The AI-Assisted Solution</h2>
+  <p class="lede">An AI tool that ranks foreign firms and sectors by their likelihood to invest outside the resource base, to help the investment promotion agency prioritise outreach.</p>
+  <dl class="sol">
+    <dt>What it does</dt><dd>Ranks candidate firms and sectors for outreach. A human officer reads the ranking and decides.</dd>
+    <dt>Inputs</dt><dd>Public firm and sector data, public project announcements, relatedness data. Non-public agency records are not assumed; if they were used, consent and disclosure would become a cost (see the Bill).</dd>
+    <dt>Output</dt><dd>A ranked list with the reasons for each rank.</dd>
+    <dt>Who decides</dt><dd>The agency's staff, not the model.</dd>
+    <dt>How it is evaluated</dt><dd>Against a holdout group and a non-AI baseline, with an objective that rewards sector novelty rather than resemblance to past investors.</dd>
+    <dt>What it does not touch</dt><dd>Energy prices, courts, tax rules and market size (H0, H2, H3).</dd>
+  </dl>
+  <h3>Documented cases</h3>
+  <p class="deep" style="font:14px/1.5 var(--sans);color:var(--muted);max-width:820px">Only one case reports an outcome against a comparison, and its source co-ran the pilot. The evidence base is thin, and that is itself a finding.</p>
+  <div id="cases"></div>
+</section>
+
+<section class="slide" id="bill">
+  <h2><span class="n">5</span>The Bill: what it would cost</h2>
+  <p class="lede">The licence fee is the smallest cost. The real bill is mistargeting, state discretion and what the money could have fixed instead. Red lines mark where no data exists.</p>
+  <div class="bill" id="billcards"></div>
+</section>
+
+<section class="slide" id="verdict">
+  <h2><span class="n">6</span>Verdict</h2>
+  <p class="lede">Only under conditions. Not a plain yes, and not a plain no.</p>
+  <div class="prose"><p>Knowing the costs, Kazakhstan should not adopt an AI investor-targeting tool on current evidence. It should run it as a small, evaluated pilot, and only if the conditions below are met first. If the real obstacle is energy, courts or market size, the tool treats a symptom and the money is better spent elsewhere.</p></div>
+  <h3>Conditions</h3>
+  <div class="tblwrap"><table id="conds"><thead><tr><th>Condition</th><th>Status</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+  <div class="sides deep" style="margin-top:22px">
+    <div class="side"><h3>The strongest case for "yes"</h3><p>A ranking tool is cheap and a human still decides. Costa Rica's pilot reports a gain over the agency's own earlier method, and investment-promotion research finds that agencies can raise first entry for firms facing information frictions. Even a modest gain is worth the small cost, and a pilot with a holdout group would produce the missing evidence.</p></div>
+    <div class="side"><h3>The strongest case for "no"</h3><p>The evidence points away from information as the binding constraint, and the pilot evidence is not independent and has no outcome baseline. A model trained on decades of oil and gas investors favours investors like the past, which works against diversification. A tool that looks objective can also hide state discretion about who counts as a priority investor.</p></div>
+  </div>
+</section>
+
+<section class="slide" id="transparency">
+  <h2>AI transparency statement</h2>
+  <div class="prose">
+    <h3>What AI contributed</h3>
+    <p>Claude (Anthropic) supported the research and the site. In a separate log chat, it proposed candidate problems, searched for and summarised sources and figures, drafted the section texts and the cost assessment, and criticised my choices. In a working chat, it built this website. The content and structure were my choices; the log records where I pushed back.</p>
+    <h3>What I accepted</h3>
+    <p>The problem framing around composition and narrowness, the three hypotheses (H1 to H3) plus a baseline H0, the narrow and broad definitions, the use of gross flows and stock as headline numbers, the verification labels on every number, and the verdict "only under conditions".</p>
+    <h3>What I rejected, and why</h3>
+    <p>I rejected the first candidate ranking, because it rewarded problems that suit AI. I dropped the claim that Invest KOREA "doubled reinvestment rates", because the source reports a hit rate and not a causal effect. I did not count Invest Estonia as a documented case, because it reports no outcomes. I stopped treating negative net flow excluding reinvested earnings as evidence of a non-resource shortfall, because the sector split shows that sign comes from mining.</p>
+    <h3>Method limits</h3>
+    <p>Claude's fetch tool returned summaries of pages, not the original files, so every number here is hollow until checked in the primary PDF. Literature was not searched systematically. Several sources were read as abstracts only. Some shares are my arithmetic. The environmental, labour and governance costs have large gaps, shown as "no data". All of this is shown on the site, not hidden.</p>
+    <h3>Disclosure of affiliation</h3>
+    <p>The author works in a field related to the topic. No non-public or internal data was used; every source is public.</p>
+  </div>
+</section>
+
+<section class="slide" id="sources">
+  <h2>Sources</h2>
+  <p class="deep" style="font:14px var(--sans);color:var(--muted)">Each source carries its verification status. "Extraction" means a model's summary of the page, not the file itself.</p>
+  <ol class="src" id="srclist"></ol>
+</section>
+</main>
+
+<footer>No cookies, trackers or analytics. Everything is in this one file; no outside requests.</footer>
+<div id="tip" role="tooltip"></div>
+<div class="hud" id="hud"></div>
+
+<script>
+"use strict";
+/* ---------- DATA: every value verified:false until checked in the primary PDF ---------- */
+var SRC = {
+  NBK_BOP_9M25:{t:"National Bank of Kazakhstan, Balance of Payments and External Debt, 9M 2025",u:"https://nationalbank.kz/file/download/119304",s:"extraction"},
+  NBK_REVIEW_3_25:{t:"NBK Economic Review No. 3, 2025 (Amantai, pp. 59-72)",u:"https://nationalbank.kz/file/download/115064",s:"extraction"},
+  HALYK_APR26:{t:"Halyk Finance, FDI note, 20 Apr 2026",u:"https://halykfinance.kz/download/files/analytics/AC20042026.pdf",s:"secondary"},
+  HALYK_JAN26:{t:"Halyk Finance, summary of NBK FDI article, Jan 2026",u:"https://halykfinance.kz/download/files/analytics/Nacbank_FDI_MT_yanv_2026.pdf",s:"secondary"},
+  UNCTAD_WIR26:{t:"UNCTAD, World Investment Report 2026, LLDC regional note",u:"https://unctad.org/system/files/non-official-document/wir2026-regional_trends_lldcs_en.pdf",s:"extraction"},
+  IMF_CR26_17:{t:"IMF Country Report 26/17 (Jan 2026); first 100,000 of 175,930 characters read",u:"https://www.imf.org/-/media/files/publications/cr/2026/english/1kazea2026001-source-pdf.pdf",s:"extraction"},
+  OECD_BC23:{t:"OECD, Insights on the Business Climate in Kazakhstan (2023), ch. 6",u:"https://www.oecd.org/en/publications/insights-on-the-business-climate-in-kazakhstan_bd780306-en/full-report/component-9",s:"extraction"},
+  IDB_IPA26:{t:"IDB, Supporting Firms in the Digital Age: The Case of Investment Promotion (May 2026)",u:"https://publications.iadb.org/publications/english/document/Supporting-Firms-in-the-Digital-Age-The-Case-of-Investment-Promotion.pdf",s:"extraction"},
+  UNCTAD_IPA16:{t:"UNCTAD, IPA Observer 16: AI for investment promotion (publication page; PDF not opened)",u:"https://unctad.org/publication/artificial-intelligence-investment-promotion",s:"secondary"},
+  PVDP13:{t:"Poelhekke & van der Ploeg (2013), Review of Economics and Statistics 95(3)",u:"https://doi.org/10.1162/REST_a_00292",s:"abstract"},
+  JAV04:{t:"Javorcik (2004), American Economic Review 94(3):605-627",u:"https://doi.org/10.1257/0002828041464605",s:"abstract"},
+  HJ11:{t:"Harding & Javorcik (2011), Economic Journal 121(557):1445-1476",u:"https://doi.org/10.1111/j.1468-0297.2011.02454.x",s:"abstract"},
+  CARBALLO21:{t:"Carballo, Marra de Artinano & Volpe Martincus (2021), Information Frictions, Investment Promotion and Multinational Activity, CESifo WP 9043",u:"https://www.cesifo.org/en/publications/2021/working-paper/information-frictions-investment-promotion-and-multinational",s:"abstract"},
+  HIDALGO07:{t:"Hidalgo, Klinger, Barabasi & Hausmann (2007), Science 317(5837):482-487",u:"https://doi.org/10.1126/science.1144581",s:"notopened"},
+  JLW10:{t:"Jones Luong & Weinthal, Oil Is Not a Curse, Cambridge University Press (ISBN 9780521765770)",u:"",s:"notopened"},
+  VANDERHILL19:{t:"Vanderhill, Joireman & Tulepbayeva (2019), FDI linkages and institutional change in Kazakhstan, Azerbaijan and Kyrgyzstan (repository record only)",u:"",s:"notopened"},
+  IRCAI_EST:{t:"IRCAI Global Top 100, Invest Estonia entry, 2025 (self-submitted)",u:"https://ircai.org/top100/entry/automation-of-investment-promotion-at-the-estonian-investment-agency-3/",s:"secondary"}
+};
+var STATUS = {extraction:"Extraction only",secondary:"Secondary summary",abstract:"Abstract only",notopened:"Not opened"};
+
+function N(v,unit,year,src,basis,vintage){return {v:v,unit:unit,year:year,src:src,basis:basis,vintage:vintage,ok:false};}
+
+var STATS = [
+ {label:"Direct-investment liabilities (stock), 1 Oct 2025",disp:"$164.4bn",n:N(164.4,"US$ bn","1 Oct 2025","NBK_BOP_9M25","balance of payments, assets/liabilities principle","9M 2025 report")},
+ {label:"Gross FDI inflow, 2024",disp:"$17.8bn",n:N(17.8,"US$ bn","2024","NBK_BOP_9M25","gross inflow, NBK balance of payments","9M 2025 report")},
+ {label:"2025 net FDI in mining vs manufacturing",disp:"-$6.5bn / +$1.7bn",neg:true,n:N("-6.5 / +1.7","US$ bn","2025","HALYK_APR26","net incurrence of liabilities by sector","Apr 2026")},
+ {label:"Metallurgy share of 2025 manufacturing FDI inflows",disp:"47%",n:N(47,"%","2025","HALYK_APR26","share of flows","Apr 2026")}
+];
+
+var A_YEARS=[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+var A_GROSS=[15368,21367,20960,24271,24437,17155,23810,28171,23866,17761];
+var A_NET=[4057,8514,4714,3898,3284,3670,3353,6542,3590,151];
+var A_SRC="HALYK_JAN26", A_BASIS="NBK Economic Review series", A_VINT="Jan 2026";
+var A25={gross:14894.6,net:-397.6,src:"NBK_BOP_9M25",basis:"9M 2025 only; net = net incurrence of liabilities (different basis)",vint:"9M 2025 report"};
+
+var B_DATA=[
+ {l:"Mining",v:-6.5},{l:"of which oil & gas",v:-6.3,sub:true},{l:"Construction",v:-0.3},
+ {l:"Manufacturing",v:1.7},{l:"Trade, finance & comm.",v:3.4}
+];
+var C_DATA=[{l:"Equity",v:75.7},{l:"Intercompany debt",v:88.7}];
+var D_DATA=[
+ {l:"Basic metals",v:10293.7},{l:"Chemicals",v:5549.3},{l:"Residual, not itemised",v:3520.1},
+ {l:"Food",v:2257.5},{l:"Transport equipment",v:1027.4},{l:"Coke & refined products",v:867.5}
+];
+
+var SIL=[
+ ["Direct-investment-only stock by activity is missing (the NBK table covers all instruments).","The narrow definition can only be bracketed, not measured.","Non-resource investors hidden inside aggregates."],
+ ["Gross inflow by sector is missing; the sector data found is net only.","New entry cannot be separated from turnover.","New entrants, who look the same as repayments in a net figure."],
+ ["There is no single 'net'. Five readings of 2024 run from $0.15bn to $3.9bn.","Headline claims depend on the definition chosen.","Anyone comparing figures across sources."],
+ ["Special-purpose entities, transit capital and ultimate owners are not discussed in the sources read. UNCTAD excludes SPEs.","Country-of-origin analysis is unreliable.","The real source of the money."],
+ ["The full-year 2025 file and 2026 data are missing; the NBK revises in May and November.","Vintage risk: numbers can move.","Anyone relying on early releases."],
+ ["No pre-2025 non-extractive series.","Cannot say whether +$1.7bn in manufacturing is high or low.","The trend in non-resource FDI."],
+ ["The NBK notes that oil and gas activity also appears under transport and trade.","Part of 'non-resource' may be resource-linked.","The boundary of the category itself."],
+ ["No data on local sourcing or supplier contracts.","The spillover mechanism is untested.","Local suppliers."],
+ ["Rent capture is not split by sector: income payable to direct investors was $16.0bn in 9M 2025 against net profit of $11.8bn.","Who captures the gains is unknown by sector.","The state and local firms, if gains leave."],
+ ["Agency pipeline records, which show where investors stall, are not public.","H1 remains a hypothesis.","The investors that stall."],
+ ["Finance: new capital or purchase of existing banks is unknown.","The finance comparison is open.","Reading finance inflows as diversification."],
+ ["No domestic-capital comparison was collected.","Cannot compare foreign with domestic investment.","Domestic investors."]
+];
+
+var APP=[
+ ["Resource curse and crowding-out","Resource-sector FDI may crowd out non-resource FDI.",["PVDP13"],"Abstract only"],
+ ["Spillovers and linkages","Spillovers from foreign firms to local ones run mainly through supplier links. Kazakhstan evidence on linkages exists but is unread.",["JAV04","VANDERHILL19"],"Abstract only; one repository record only"],
+ ["Obsolescing bargain and credible commitment","Institutions that shape state-investor bargains may explain why large extractive projects and small manufacturers are treated differently.",["JLW10"],"Not opened"],
+ ["Investment promotion effectiveness","Promotion agencies can raise first entry by firms facing information frictions, but evidence of effects on later expansion is weak.",["HJ11","CARBALLO21","IDB_IPA26"],"Abstracts; IDB report read by extraction"],
+ ["Product space and relatedness","Countries tend to enter sectors close to what they already do. This warns that targeting trained on past investors would repeat the past.",["HIDALGO07"],"Not opened"]
+];
+
+var CASES=[
+ {n:"A. Costa Rica, CINDE (investment promotion agency)",ev:"IDB report, May 2026, Section 5.2, Box 24",what:"Supervised machine learning ranks multinationals by likelihood of establishing or expanding an affiliate.",res:"Against the agency's own earlier generic ML: +10 to 11% probability for pipeline firms and +17 to 19% for prospects. The authors call these first preliminary results.",lim:"Baselines, sample sizes, significance and costs are not reported. The unit (percent or percentage points) is unclear. Not independent: the IDB co-ran the pilot in 2020 to 2022.",src:["IDB_IPA26","CARBALLO21"],kind:"outcome"},
+ {n:"B. Invest KOREA",ev:"UNCTAD, IPA Observer 16",what:"An AI system flags firms likely to invest again.",res:"38.5% of flagged firms went on to invest, against a 17.7% baseline, 2023 to 2025 (about 2.2 times).",lim:"A hit rate, not a causal effect: no control group, baseline definition unknown. It tests aftercare for existing investors, not winning new non-resource investors. No primary Korean evaluation was found.",src:["UNCTAD_IPA16"],kind:"outcome"},
+ {n:"C. Invest Estonia",ev:"IRCAI Global Top 100 entry, 2025, self-submitted",what:"'Non-human agents' to inform potential investors.",res:"None reported.",lim:"No outcomes, costs or evaluation. Listed only to show how thin the evidence is. It is claimed, not documented.",src:["IRCAI_EST"],kind:"claimed"}
+];
+
+var BILL=[
+ {d:"Environmental",sum:"Not estimated. A ranking model on public firm and sector data is small next to large-model training, but this project measured nothing, so no figure is claimed.",known:[],no:["Energy and water of the system: not estimated.","Set against Kazakhstan's grid: no figure.","Whether the model runs on local or foreign servers: undecided."]},
+ {d:"Economic",sum:"The licence fee is small; the real costs are staff time, data, mistargeting and opportunity cost.",known:["UNCTAD's generic estimate for such tools is $300 to $6,000 a year (secondary; page only)."],no:["Cost of the Costa Rica pilot: 'not stated' in the IDB report.","Who profits: not quantified.","Opportunity cost against fixing energy, courts or zones: not priced."]},
+ {d:"Labor",sum:"Little work disappears, and some is saved. The hidden labour is data work and maintenance.",known:["UNCTAD reports Invest KOREA saved over 1,000 staff hours a year (secondary)."],no:["Hidden labour (data cleaning, labelling, upkeep): no data.","Jobs in the agency affected: no data."]},
+ {d:"Political and governance",sum:"The risk is discretion: a ranking can make a choice about 'priority investors' look objective.",known:["Law on Artificial Intelligence No. 230-VIII was signed 17 Nov 2025 and took effect 18 Jan 2026, the first such law in Central Asia."],no:["How the law classifies this tool: not analysed clause by clause.","Data localisation requirements: not checked.","The discretion hypothesis: no source tests it."]},
+ {d:"Data ethics",sum:"Public data is low-risk. Agency records on named investors would raise consent and disclosure questions.",known:[],no:["Whether non-public records would be used: undecided; this design assumes not.","Bias: a model trained on oil and gas investor history may favour similar investors. A hypothesis, not tested."]}
+];
+
+var CONDS=[
+ ["Public evidence that investors outside resources stall at finding partners, sites or suppliers (H1)","untested","No such evidence was found. Agency pipeline records are not public."],
+ ["The objective rewards sector novelty, not resemblance to past investors","untested","A design requirement. The Costa Rica pilot targets the probability of a lead, so it fails this."],
+ ["Evaluation against a holdout group","untested","The Costa Rica pilot mentions randomisation, but its design is not described."],
+ ["The tool beats the non-AI alternative per dollar (energy, courts, zones, standard promotion services)","untested","Costa Rica compares ML with another ML method, not with non-AI methods."],
+ ["Human staff decide, with reasons shown for each rank","unknown","A design choice; not tested."]
+];
+
+/* ---------- helpers ---------- */
+var $=function(s){return document.querySelector(s)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function fmt(v){return (Math.abs(v)>=1000?Math.round(v).toLocaleString("en-US"):String(Math.round(v*10)/10))}
+function tipText(n){
+  var s=SRC[n.src]; var t=n.label?n.label+"\n":"";
+  return t+n.value+" "+n.unit+(n.year?" ("+n.year+")":"")+"\nSource: "+(s?s.t:n.src)+"\nBasis: "+n.basis+"\nVintage: "+n.vintage+"\nStatus: "+(n.ok?"SOLID, checked in primary document":"HOLLOW, not checked in primary document");
+}
+var tip=$("#tip");
+function showTip(e,txt){tip.textContent=txt;tip.style.whiteSpace="pre-line";tip.style.display="block";var x=(e.clientX||0)+14,y=(e.clientY||0)+14;var w=tip.offsetWidth;if(x+w>innerWidth-8)x=innerWidth-w-8;tip.style.left=Math.max(8,x)+"px";tip.style.top=y+"px";}
+function hideTip(){tip.style.display="none"}
+document.addEventListener("mouseover",function(e){var t=e.target.closest("[data-tip]");if(t)showTip(e,t.getAttribute("data-tip"))});
+document.addEventListener("mousemove",function(e){if(tip.style.display==="block"&&e.target.closest("[data-tip]"))showTip(e,tip.textContent)});
+document.addEventListener("mouseout",function(e){if(e.target.closest("[data-tip]"))hideTip()});
+document.addEventListener("click",function(e){var t=e.target.closest("[data-tip]");if(t&&"ontouchstart" in window){showTip(e,t.getAttribute("data-tip"));setTimeout(hideTip,3500)}});
+
+var NS="http://www.w3.org/2000/svg";
+function el(tag,attrs,txt){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(txt!=null)e.textContent=txt;return e}
+function marker(svg,x,y,r,color,ok,tipTxt,shape){
+  var m = shape==="d" ? el("path",{d:"M"+x+" "+(y-r-1)+"L"+(x+r+1)+" "+y+"L"+x+" "+(y+r+1)+"L"+(x-r-1)+" "+y+"Z"}) : el("circle",{cx:x,cy:y,r:r});
+  m.setAttribute("fill",ok?color:"#fffdf8");m.setAttribute("stroke",color);m.setAttribute("stroke-width","2");
+  m.setAttribute("data-tip",tipTxt);m.style.cursor="pointer";svg.appendChild(m);
+}
+function footer(id,srcId,basis,vint,total){
+  var s=SRC[srcId];
+  $(id).innerHTML="Source: "+esc(s?s.t:srcId)+"<br>Basis: "+esc(basis)+" · Vintage: "+esc(vint)+" · 0 of "+total+" points verified in the primary document · Retrieved 16 Nov 2026";
+}
+
+/* ---------- Panel A ---------- */
+(function(){
+  var svg=$("#pA"),W=640,H=330,L=58,R=18,T=18,B=48;
+  var ymin=-2000,ymax=30000;
+  var px=function(i){return L+(W-L-R)*(i/ (A_YEARS.length+1))};  /* extra slot for 2025 */
+  var py=function(v){return T+(H-T-B)*(1-(v-ymin)/(ymax-ymin))};
+  [0,10000,20000,30000].forEach(function(v){
+    svg.appendChild(el("line",{x1:L,x2:W-R,y1:py(v),y2:py(v),stroke:v===0?"#5a6268":"#e4dfd2","stroke-width":v===0?1.4:1}));
+    svg.appendChild(el("text",{x:L-8,y:py(v)+4,"text-anchor":"end","font-size":12,fill:"#5a6268"},v/1000+"bn"));
+  });
+  svg.appendChild(el("text",{x:L-8,y:T-6,"text-anchor":"end","font-size":11,fill:"#5a6268"},"US$"));
+  A_YEARS.forEach(function(y,i){ if(i%1===0) svg.appendChild(el("text",{x:px(i),y:H-26,"text-anchor":"middle","font-size":11,fill:"#5a6268"},String(y).slice(2)));});
+  var x25=px(A_YEARS.length+1);
+  svg.appendChild(el("line",{x1:(px(A_YEARS.length-1)+x25)/2,x2:(px(A_YEARS.length-1)+x25)/2,y1:T,y2:H-B+6,stroke:"#b9b2a1","stroke-dasharray":"4 4"}));
+  svg.appendChild(el("text",{x:x25,y:H-26,"text-anchor":"middle","font-size":11,fill:"#5a6268"},"9M 25"));
+  svg.appendChild(el("text",{x:W/2,y:H-6,"text-anchor":"middle","font-size":11,fill:"#5a6268"},"Year (2025: nine months, different basis)"));
+  function series(arr,color,name){
+    var d="";arr.forEach(function(v,i){d+=(i?"L":"M")+px(i)+" "+py(v)});
+    svg.appendChild(el("path",{d:d,fill:"none",stroke:color,"stroke-width":2}));
+    arr.forEach(function(v,i){marker(svg,px(i),py(v),4.2,color,false,name+" "+A_YEARS[i]+"\n"+fmt(v)+" US$ m\nSource: "+SRC[A_SRC].t+"\nBasis: "+A_BASIS+"\nVintage: "+A_VINT+"\nStatus: HOLLOW, not checked in primary document");});
+  }
+  series(A_GROSS,"#0f5c63","Gross inflow");series(A_NET,"#a4442c","Net (analytic series)");
+  marker(svg,x25,py(A25.gross),4.2,"#0f5c63",false,"Gross inflow 9M 2025\n"+fmt(A25.gross)+" US$ m\nSource: "+SRC[A25.src].t+"\nBasis: "+A25.basis+"\nVintage: "+A25.vint+"\nStatus: HOLLOW","d");
+  marker(svg,x25,py(A25.net),4.2,"#a4442c",false,"Net incurrence of liabilities 9M 2025\n"+fmt(A25.net)+" US$ m\nSource: "+SRC[A25.src].t+"\nBasis: "+A25.basis+"\nVintage: "+A25.vint+"\nStatus: HOLLOW","d");
+  svg.appendChild(el("text",{x:px(1),y:py(A_GROSS[1])-14,"font-size":12,fill:"#0f5c63","font-weight":600},"Gross"));
+  svg.appendChild(el("text",{x:px(1),y:py(A_NET[1])+22,"font-size":12,fill:"#a4442c","font-weight":600},"Net"));
+  footer("#fA",A_SRC,A_BASIS+"; 2025 on NBK balance-of-payments basis",A_VINT+"; 9M 2025 report",A_YEARS.length*2+2);
+})();
+
+/* ---------- horizontal bars (B, D) ---------- */
+function hbars(svgId,data,unit,src,basis,vint,year,opts){
+  var svg=$(svgId),W=640,H=330,L=opts.left,R=opts.right||50,T=14,rowH=(H-T-10)/data.length;
+  var mn=Math.min(0,Math.min.apply(null,data.map(function(d){return d.v}))),mx=Math.max.apply(null,data.map(function(d){return d.v}));
+  var span=mx-mn,x=function(v){return L+(W-L-R)*((v-mn)/span)};
+  svg.appendChild(el("line",{x1:x(0),x2:x(0),y1:T-4,y2:H-6,stroke:"#5a6268","stroke-width":1.4}));
+  data.forEach(function(d,i){
+    var y=T+i*rowH+rowH*0.18,h=rowH*0.64,x0=x(0),x1=x(d.v),color=d.v<0?"#a4442c":"#0f5c63";
+    var r=el("rect",{x:Math.min(x0,x1),y:y,width:Math.max(2,Math.abs(x1-x0)),height:h,fill:"#fffdf8",stroke:color,"stroke-width":2,rx:2});
+    r.setAttribute("data-tip",d.l+"\n"+fmt(d.v)+" "+unit+(year?" ("+year+")":"")+"\nSource: "+SRC[src].t+"\nBasis: "+basis+"\nVintage: "+vint+"\nStatus: HOLLOW, not checked in primary document");
+    r.style.cursor="pointer";svg.appendChild(r);
+    var tx=d.v<0?x0+8:L-8, anchor=d.v<0?"start":"end";
+    if(opts.zeroLabelLeft){tx=L-8;anchor="end"}
+    svg.appendChild(el("text",{x:tx,y:y+h/2+4,"text-anchor":anchor,"font-size":12,fill:"#1d2327","font-style":d.sub?"italic":"normal"},d.l));
+    var vx=d.v<0?x0+8:x1+6;svg.appendChild(el("text",{x:vx,y:y+h/2+4,"text-anchor":"start","font-size":12,fill:color,"font-weight":600},(d.v>0?"+":"")+fmt(d.v)));
+  });
+  footer(opts.foot,src,basis,vint,data.length);
+}
+/* B: labels placed at left margin so they never collide with negative bars */
+hbars("#pB",B_DATA,"US$ bn","HALYK_APR26","net incurrence of liabilities by sector","Apr 2026","2025",{left:170,foot:"#fB",zeroLabelLeft:true});
+hbars("#pD",D_DATA,"US$ m","NBK_BOP_9M25","stock of all external liabilities by activity (not direct investment only)","9M 2025 report; 1 Oct 2025","",{left:170,right:90,foot:"#fD",zeroLabelLeft:true});
+
+/* ---------- Panel C ---------- */
+(function(){
+  var svg=$("#pC"),W=640,L=20,R=20,y=70,h=64,tot=C_DATA[0].v+C_DATA[1].v,x=L;
+  var cols=["#0f5c63","#a4442c"];
+  C_DATA.forEach(function(d,i){
+    var w=(W-L-R)*d.v/tot;
+    var r=el("rect",{x:x,y:y,width:w,height:h,fill:"#fffdf8",stroke:cols[i],"stroke-width":2});
+    r.setAttribute("data-tip",d.l+"\n"+d.v+" US$ bn (1 Oct 2025)\nSource: "+SRC.NBK_BOP_9M25.t+"\nBasis: balance of payments, assets/liabilities principle\nVintage: 9M 2025 report\nStatus: HOLLOW, not checked in primary document");
+    r.style.cursor="pointer";svg.appendChild(r);
+    svg.appendChild(el("text",{x:x+w/2,y:y+h/2-2,"text-anchor":"middle","font-size":15,fill:cols[i],"font-weight":700},"$"+d.v+"bn"));
+    svg.appendChild(el("text",{x:x+w/2,y:y+h/2+16,"text-anchor":"middle","font-size":12,fill:"#1d2327"},d.l+" ("+Math.round(d.v/tot*100)+"%)"));
+    x+=w;
+  });
+  svg.appendChild(el("text",{x:W/2,y:y-14,"text-anchor":"middle","font-size":13,fill:"#1d2327","font-weight":600},"Total stock $164.4bn (1 Oct 2025)"));
+  var dw=(W-L-R)*C_DATA[1].v/tot, dx=L+(W-L-R)*C_DATA[0].v/tot;
+  var oil=dw*0.673;
+  var r2=el("rect",{x:dx,y:y+h+26,width:oil,height:22,fill:"#fffdf8",stroke:"#8a6a12","stroke-width":2});
+  r2.setAttribute("data-tip","Intercompany debt in oil and gas branches: 67.3% of intercompany debt, about $59.7bn (my arithmetic: 0.673 x 88.7)\nSource: "+SRC.NBK_BOP_9M25.t+"\nStatus: HOLLOW, not checked in primary document");
+  r2.style.cursor="pointer";svg.appendChild(r2);
+  svg.appendChild(el("text",{x:L,y:y+h+68,"font-size":12,fill:"#8a6a12","font-weight":600},"Gold box: 67.3% of the debt sits in oil & gas branches (about $59.7bn)"));
+  svg.appendChild(el("text",{x:L,y:y+h+100,"font-size":12,fill:"#5a6268"},"Oil and gas branches alone hold roughly 36% of the whole stock (my arithmetic)."));
+  svg.appendChild(el("text",{x:L,y:y+h+120,"font-size":12,fill:"#5a6268"},"Stock was $169.5bn on 1 Jan 2025: a fall of $5.1bn."));
+  footer("#fC","NBK_BOP_9M25","balance of payments, assets/liabilities principle","9M 2025 report",2);
+})();
+
+/* ---------- text blocks ---------- */
+function badge(ok){return ok?'<span class="badge b-solid">solid</span>':'<span class="badge b-hollow">hollow</span>'}
+$("#statcards").innerHTML=STATS.map(function(s){
+  return '<div class="stat" data-tip="'+esc(tipText({label:s.label,value:s.n.v,unit:s.n.unit,year:s.n.year,src:s.n.src,basis:s.n.basis,vintage:s.n.vintage,ok:s.n.ok}))+'"><div class="v'+(s.neg?' neg':'')+'">'+esc(s.disp)+'</div><div class="l">'+esc(s.label)+'</div><div class="s">'+badge(s.n.ok)+' '+esc((SRC[s.n.src]||{}).t?s.n.src:"")+'</div></div>';
+}).join("");
+$("#silences tbody").innerHTML=SIL.map(function(r,i){return "<tr><td>"+(i+1)+"</td><td>"+esc(r[0])+"</td><td>"+esc(r[1])+"</td><td>"+esc(r[2])+"</td></tr>"}).join("");
+function srcLinks(ids){return ids.map(function(id){return '<code>'+esc(id)+'</code>'}).join(", ")}
+$("#approaches tbody").innerHTML=APP.map(function(r){return "<tr><td><b>"+esc(r[0])+"</b></td><td>"+esc(r[1])+"</td><td>"+srcLinks(r[2])+"</td><td>"+esc(r[3])+"</td></tr>"}).join("");
+$("#cases").innerHTML=CASES.map(function(c){
+  return '<div class="case"><h4>'+esc(c.n)+' <span class="badge '+(c.kind==="outcome"?"b-un":"b-no")+'">'+(c.kind==="outcome"?"outcome reported, weak design":"claimed, no evidence")+'</span></h4>'+
+  '<p><b>Evidence:</b> '+esc(c.ev)+'</p><p><b>What was built:</b> '+esc(c.what)+'</p><p><b>Reported result:</b> '+esc(c.res)+'</p><p><b>Limits:</b> '+esc(c.lim)+'</p><p><b>Sources:</b> '+srcLinks(c.src)+'</p></div>';
+}).join("");
+$("#billcards").innerHTML=BILL.map(function(b){
+  return '<div class="case"><h4>'+esc(b.d)+'</h4><p>'+esc(b.sum)+'</p>'+
+  (b.known.length?'<ul>'+b.known.map(function(k){return "<li>"+esc(k)+"</li>"}).join("")+'</ul>':"")+
+  '<ul class="nodata">'+b.no.map(function(k){return "<li>No data: "+esc(k)+"</li>"}).join("")+'</ul></div>';
+}).join("");
+$("#conds tbody").innerHTML=CONDS.map(function(c){
+  var cls=c[1]==="met"?"b-ok":(c[1]==="unmet"?"b-no":"b-un");
+  return "<tr><td>"+esc(c[0])+'</td><td><span class="badge '+cls+'">'+esc(c[1])+"</span></td><td>"+esc(c[2])+"</td></tr>";
+}).join("");
+$("#srclist").innerHTML=Object.keys(SRC).map(function(k){
+  var s=SRC[k];return "<li><code>"+k+"</code> "+(s.u?'<a href="'+esc(s.u)+'" target="_blank" rel="noopener noreferrer">'+esc(s.t)+'</a>':esc(s.t))+' <span class="badge b-hollow">'+STATUS[s.s]+"</span></li>";
+}).join("");
+
+/* ---------- navigation, progress, presentation mode ---------- */
+var ids=["problem","data","research","solution","bill","verdict","transparency","sources"];
+var links=document.querySelectorAll("nav.arc a[data-s]");
+function onScroll(){
+  var h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);$("#bar").style.width=(p*100)+"%";
+  var cur=null;ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<innerHeight*0.4)cur=id});
+  links.forEach(function(a){a.classList.toggle("on",a.getAttribute("data-s")===cur)});
+}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+var slides=[].slice.call(document.querySelectorAll(".slide"));
+function curSlide(){var best=0,bd=1e9;slides.forEach(function(s,i){var d=Math.abs(s.getBoundingClientRect().top);if(d<bd){bd=d;best=i}});return best}
+function go(i){i=Math.max(0,Math.min(slides.length-1,i));slides[i].scrollIntoView({behavior:"smooth",block:"start"});hud(i)}
+function hud(i){$("#hud").textContent=(i+1)+" / "+slides.length+"  ·  arrows to move  ·  Esc to exit"}
+function togglePresent(on){
+  var s=on===undefined?!document.body.classList.contains("present"):on;
+  document.body.classList.toggle("present",s);
+  if(s){hud(curSlide());if(document.documentElement.requestFullscreen){try{document.documentElement.requestFullscreen()}catch(e){}}}
+  else if(document.fullscreenElement&&document.exitFullscreen){document.exitFullscreen()}
+}
+$("#pbtn").addEventListener("click",function(){togglePresent()});
+addEventListener("keydown",function(e){
+  if(e.metaKey||e.ctrlKey||e.altKey)return;
+  if(e.key==="p"||e.key==="P"){togglePresent();return}
+  if(!document.body.classList.contains("present"))return;
+  if(e.key==="Escape"){togglePresent(false)}
+  else if(["ArrowRight","ArrowDown","PageDown"," "].indexOf(e.key)>-1){e.preventDefault();go(curSlide()+1)}
+  else if(["ArrowLeft","ArrowUp","PageUp"].indexOf(e.key)>-1){e.preventDefault();go(curSlide()-1)}
+});
+addEventListener("scroll",function(){if(document.body.classList.contains("present"))hud(curSlide())},{passive:true});
+if(location.search.indexOf("present")>-1)togglePresent(true);
+</script>
+</body>
+</html>
